@@ -1,0 +1,8 @@
+### Open-Id Connect
+
+# Replace REALM NAME in Url with your Keycloud Realm
+# Replace CLIENTID, USERNAME, PASSWORD in params with your details
+POST {{host}}:{{port}}/realms/REALM NAME/protocol/openid-connect/token HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+client_id=CLIENTID&username=USERNAME&password=PASSWORD&grant_type=password
